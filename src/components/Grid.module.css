@@ -1,0 +1,62 @@
+.grid{
+    display: grid; 
+    gap: 1.5rem; 
+}
+
+.topTab{
+    margin-bottom: 1rem; 
+}
+.topTitle{
+    color: var(--c-text-high-contrast); 
+    font-size: 1.6rem;  
+}
+
+.totalFollows{
+    color: var(--c-text-medium); 
+    font-weight: 700; 
+}
+
+.titleTab{
+    padding-bottom: 1.5rem; 
+    border-bottom: solid 1px var(--c-text-medium);
+    margin-bottom: 1rem; 
+}
+.middleTab{
+    margin-top: 1rem;
+}
+.middleTab h2{
+    color: var(--c-text-medium); 
+    font-size: 1.4rem;  
+}
+
+@media (min-width: 750px) {
+    .grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .titleTab{
+        border: 0; 
+        padding: 0; 
+        margin: 0; 
+    }
+    .topTab{
+        grid-column:span 4; 
+        display: flex; 
+        align-items: flex-start; 
+        justify-content: space-between;
+        align-items: center; 
+    }
+    .topTitle{
+        font-size: 2rem; 
+    }
+    .middleTab{
+        grid-column: span 4; 
+          
+    }
+    .middleTab h2{
+        font-size: 1.6rem;
+    }
+
+    .topTab{
+        margin-bottom: 2rem; 
+    }
+}

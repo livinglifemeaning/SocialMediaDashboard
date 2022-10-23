@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+html {
+  --f-primary: "Inter", sans-serif;
+  /* Shared Colors */
+  --c-primary-lime: hsl(163, 72%, 41%);
+  --c-primary-red: hsl(356, 69%, 56%);
+  --c-facebook: hsl(208, 92%, 53%);
+  --c-twitter: hsl(203, 89%, 53%);
+  --c-instagram: linear-gradient(95deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --c-youtube: hsl(348, 97%, 39%);
+  --c-toggle-background: linear-gradient(
+    95deg,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
+
+  /* Light Theme */
+  --c-light-toggle: hsl(0, 0%, 100%);
+  --c-light-background: hsl(0, 0%, 100%);
+  --c-light-background-accent: hsl(225, 100%, 98%);
+  --c-light-card-background: hsl(227, 47%, 96%);
+  --c-light-text-medium: hsl(228, 12%, 44%);
+  --c-light-text-dark: hsl(230, 17%, 14%);
+  --c-light-hover: hsl(227, 47%, 94%); 
+
+  /* Dark Theme */
+  --c-dark-toggle: hsl(228, 28%, 20%) ; 
+  --c-dark-background: hsl(230, 17%, 14%);
+  --c-dark-background-accent: hsl(232, 19%, 15%);
+  --c-dark-card-background: hsl(228, 28%, 20%);
+  --c-dark-text-medium: hsl(228, 34%, 66%);
+  --c-dark-text-light: hsl(0, 0%, 100%);
+  --c-dark-hover: hsl(228, 28%, 30%);
+}
+
+:root {
+  color-scheme: light;
+  --c-toggle: var(--c-light-toggle);
+  --c-background: var(--c-light-background);
+  --c-background-accent: var(--c-light-background-accent);
+  --c-card-background: var(--c-light-card-background);
+  --c-text-medium: var(--c-light-text-medium);
+  --c-text-high-contrast: var(--c-light-text-dark);
+  --c-hover: var(--c-light-hover); 
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --c-toggle: var(--c-dark-toggle);
+    --c-background: var(--c-dark-background);
+    --c-background-accent: var(--c-dark-background-accent);
+    --c-card-background: var(--c-dark-card-background);
+    --c-text-medium: var(--c-dark-text-medium);
+    --c-text-high-contrast: var(--c-dark-text-light);
+    --c-hover: var(--c-dark-hover);
+  }
+}
+
+[color-scheme="light"] {
+  color-scheme: light;
+  --c-toggle: var(--c-light-toggle);
+  --c-background: var(--c-light-background);
+  --c-background-accent: var(--c-light-background-accent);
+  --c-card-background: var(--c-light-card-background);
+  --c-text-medium: var(--c-light-text-medium);
+  --c-text-high-contrast: var(--c-light-text-dark);
+  --c-hover: var(--c-light-hover); 
+}
+
+[color-scheme="dark"] {
+  color-scheme: dark;
+  --c-toggle: var(--c-dark-toggle);
+  --c-background: var(--c-dark-background);
+  --c-background-accent: var(--c-dark-background-accent);
+  --c-card-background: var(--c-dark-card-background);
+  --c-text-medium: var(--c-dark-text-medium);
+  --c-text-high-contrast: var(--c-dark-text-light);
+  --c-hover: var(--c-dark-hover);
+}

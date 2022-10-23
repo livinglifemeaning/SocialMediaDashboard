@@ -1,0 +1,33 @@
+[{
+    "media-type" : "Facebook", 
+    "handle":"@nathanf", 
+    "follower-count": 1987, 
+    "displayed-follower-count": "1987", 
+    "increase": true, 
+    "amount-of-increase-decrease": 12 
+},
+{
+    "media-type" : "Twitter", 
+    "handle":"@nathanf", 
+    "follower-count": 1044, 
+    "displayed-follower-count": "1044", 
+    "increase": true, 
+    "amount-of-increase-decrease": 99
+},
+{
+    "media-type" : "Instagram", 
+    "handle":"@realnathanf", 
+    "follower-count": 11000, 
+    "displayed-follower-count": "11k", 
+    "increase": true, 
+    "amount-of-increase-decrease": 1099
+},
+{
+    "media-type" : "YouTube", 
+    "handle":"Nathan F.", 
+    "follower-count": 8239, 
+    "displayed-follower-count": "8239", 
+    "increase": false, 
+    "amount-of-increase-decrease": 144 
+}
+]

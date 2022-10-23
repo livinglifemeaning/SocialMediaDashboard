@@ -1,0 +1,48 @@
+.card{
+    background-color: var(--c-card-background);
+    display: flex; 
+    flex-direction: column; 
+    padding: 1.8rem; 
+    border-radius: 10px; 
+    text-align: center; 
+    gap: 1rem; 
+    cursor: pointer; 
+    transition: all 500ms ease-in-out; 
+}
+
+.card:hover{
+    background-color:var(--c-hover) ;
+}
+
+.top, .bottom{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+}
+.percentageBox{
+    display: flex; 
+    align-items: center;
+    gap: .3rem; 
+}
+.percentage{
+    font-weight: 700; 
+    font-size: .9rem; 
+}
+.percentage.increase{
+    color: var(--c-primary-lime);   
+}
+
+.percentage.decrease{
+    color: var(--c-primary-red)
+}
+.activityType{
+    color: var(--c-text-medium); 
+    font-size: 1.1rem; 
+    font-weight: 700; 
+}
+
+.activityNumber{
+    font-size: 2rem; 
+    color: var(--c-text-high-contrast);
+    font-weight: 700; 
+}

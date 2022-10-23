@@ -1,0 +1,79 @@
+.card{
+    background-color: var(--c-card-background);
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    padding: 1.8rem; 
+    border-radius: 10px; 
+    text-align: center; 
+    gap: 1.5rem; 
+    cursor: pointer; 
+    transition: all 500ms ease-in-out; 
+}
+
+.card:hover{
+    background-color:var(--c-hover) ;
+}
+.facebook{
+    border-top: solid 5px var(--c-facebook);  
+}
+.twitter{
+    border-top: solid 5px var(--c-twitter);   
+}
+
+.instagram{
+    position: relative;   
+}
+.instagram::before{
+    content:"";
+    width: 100%; 
+    height: 5px; 
+    position: absolute; 
+    background: var(--c-instagram); 
+    top: 0; 
+    left: 0; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+}
+
+.youtube{
+    border-top: solid 5px var(--c-youtube);  
+}
+
+.handleBox{
+    display: flex; 
+    gap: .5rem; 
+    align-items: center; 
+    color: var(--c-text-medium); 
+    font-weight: 700; 
+    font-size: .9rem; 
+}
+
+.followerNumber{
+    font-weight: 700; 
+    font-size: 3.5rem; 
+    line-height: 1.1em;
+    color: var(--c-text-high-contrast); 
+}
+
+.followerText{
+    color: var(--c-text-medium);
+    text-transform: uppercase; 
+    letter-spacing: .2em; 
+}
+
+.changeBox{
+    display: flex; 
+    align-items: center; 
+    gap: .3em; 
+    font-weight: 700; 
+    font-size: .9rem; 
+}
+
+.changeBox.increase{
+    color: var(--c-primary-lime); 
+}
+
+.changeBox.decrease{
+    color: var(--c-primary-red);  
+}

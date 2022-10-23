@@ -1,0 +1,46 @@
+.toggleBox{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+}
+.mode{
+    color: var(--c-text-medium); 
+    font-weight: 700; 
+}
+
+.toggle{
+    background: var(--c-toggle-background); 
+    width: 50px; 
+    height: 25px; 
+    border-radius: 50px; 
+    padding: .1rem; 
+}
+
+.circle{
+    width: 20px; 
+    height: 20px; 
+    background: var(--c-toggle); 
+    border-radius: 50%; 
+    cursor: pointer; 
+    box-shadow: 1px 1px 8px rgba(249, 249, 249, 0.741); 
+    transition: all 500ms ease-in-out; 
+     
+}
+
+.circle.darkTheme{
+    translate: 120%; 
+}
+
+@media (min-width: 750px) {
+    .toggleBox{
+        gap: 1rem;  
+    }
+
+    .circle{
+        translate: 0 1px;
+    }
+
+    .circle.darkTheme{
+        translate: 120% 1px; 
+    }
+}
